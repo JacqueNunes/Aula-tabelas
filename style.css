@@ -1,4 +1,5 @@
 body {
+    height: 100vh;
     background: var(--bg-url) no-repeat top center/cover;
     font-family: 'Inter', sans-serif;
 }
@@ -135,4 +136,14 @@ footer{
     text-align: center;
     padding: 24px 0;
     font-size: 14px;
+}
+
+@media (min-width: 700px){
+    :root{
+        --bg-url: url(./image/bg-desktop.jpg);
+    }
+
+    .light{
+        --bg-url: url(./image/bg-desktop-light.jpg);
+    }
 }
